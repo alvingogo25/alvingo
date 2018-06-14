@@ -4,23 +4,24 @@ import Home from './pages/home';
 import Projects from './pages/projects';
 import Container from './components/Container';
 import Particles from './components/Particles';
+import Navbar from './components/Navbar';
 
 
 
 const App = () => (
-  <div>
-    <Particles />
-    <Container>
-    <Router>
-      <div>
-      <Route exact path="/" component={Home} />
-      <Route path="/projects" component={Projects} />
-        </div>
-    </Router>
-  </Container>
-</div>
+  <Router>
+    <div>
+      <Particles />
+      <Container>
+        <Route exact path="/" component={Home} />
+        <Route path="/projects" component={Projects} />
+        {/* <Route path="/contact" component={Contact} /> */}
 
-  
+      </Container>
+      <Navbar />
+
+    </div>
+  </Router>
 );
 
 export default App;

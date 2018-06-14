@@ -1,13 +1,10 @@
 import React from 'react';
 
 const center = {
+    position: "relative",
     display: "flex",
-    alignItems: 'center',
-    justifyContent: 'center',
-    position: "fixed",
-    top: "150px",
-    left: "5%",
-    right: "5%"
+    marginTop: "5%",
+    height: "700px"
     
 }
 
