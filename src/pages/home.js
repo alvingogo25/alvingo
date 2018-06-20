@@ -6,7 +6,7 @@ export default () => (
     <div className="col s12 m3">
       <img
         className="circle responsive-img"
-        src={`${window.location.origin}/assets/images/rbf.png`}
+        src="./assets/images/rbf.png"
         alt="angry face"
       />
     </div>

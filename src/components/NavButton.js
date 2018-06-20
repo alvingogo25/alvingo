@@ -3,11 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 class NavButton extends React.Component {
     render() {
-        return (
-            <button className="btn">
-            <NavLink to={this.props.to}>{this.props.title}</NavLink>
-            </button>
-        )
+        return <NavLink to={this.props.to}>
+            <button className="btn-large">{this.props.title}</button>
+          </NavLink>;
     }
 }
 
