@@ -13,8 +13,8 @@ const App = () => (
     <div>
       <Particles />
       <Container>
-        <Route exact path="/" component={Home} />
-        <Route path="/projects" component={Projects} />
+        <Route exact path="/alvingo/" component={Home} />
+        <Route path="/alvingo/projects" component={Projects} />
         {/* <Route path="/contact" component={Contact} /> */}
 
       </Container>

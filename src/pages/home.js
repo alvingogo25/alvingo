@@ -6,7 +6,7 @@ export default () => (
     <div className="col s12 m3">
       <img
         className="circle responsive-img"
-        src="./assets/images/rbf.png"
+        src={`${window.location.origin}/assets/images/rbf.png`}
         alt="angry face"
       />
     </div>
@@ -18,7 +18,7 @@ export default () => (
           Extension Coding Bootcamp and am ready for a career change into web
           development. I'm passionate about building frontend applications with
           React and interested in learning Android development. Check out my 
-          <NavLink to="/projects"> projects!</NavLink>
+          <NavLink to="/alvingo/projects"> projects!</NavLink>
         </p>
       </div>
     </div>

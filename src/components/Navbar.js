@@ -12,9 +12,9 @@ class Navbar extends React.Component {
   render() {
     return (
       <div style={style} className="container">
-        <NavButton to={"/"} title={"Home"} />
-        <NavButton to={"/projects"} title={"Projects"} />
-        <NavButton to={"/contact"} title={"Contact"} />
+        <NavButton to={"/alvingo/"} title={"Home"} />
+        <NavButton to={"/alvingo/projects"} title={"Projects"} />
+        <NavButton to={"/alvingo/contact"} title={"Contact"} />
       </div>
     );
   }
