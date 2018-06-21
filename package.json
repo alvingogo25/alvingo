@@ -1,12 +1,13 @@
 {
   "name": "alvingo",
-  "homepage": "http://alvingogo25.github.io/alvingo",
+  "homepage": "http://alvingo.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^1.1.0",
     "material-ui": "^1.0.0-beta.47",
     "materialize-css": "^1.0.0-rc.1",
+    "npm": "^6.1.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-particles-js": "^2.2.0",

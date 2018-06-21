@@ -5,7 +5,7 @@ export default ({children}) => (
             {/* <span className="card-title">Card Title</span> */}
             <div className="card horizontal small">
                 <div className="card-image">
-                    <img src="assets/images/track.png" alt="" />
+                    <img src={`${window.location.origin}/assets/images/track.png`} alt="" />
                 </div>
                 <div className="card-content">
                     {children}
