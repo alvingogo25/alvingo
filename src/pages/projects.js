@@ -1,11 +1,6 @@
 import React from "react";
 import ProjectCard from "./../components/ProjectCard";
 
-const style = {
-  display: "flex",
-  justifyContent: "center"
-}
-
 class Projects extends React.Component {
   render() {
     return (
