@@ -14,11 +14,11 @@ export default () => (
       <div className="section">
         <h2>Alvin Go</h2>
         <p className="flow-text">
-          I am Full Stack Web developer. I recently graduated from UCLA
+          I am a Full Stack Web developer. I recently graduated from UCLA
           Extension Coding Bootcamp and am ready for a career change into web
-          development. I'm passionate about building frontend applications with
+          development. I'm passionate about building front end applications with
           React and interested in learning Android development. Check out my 
-          <NavLink to="/alvingo/projects"> projects!</NavLink>
+          <NavLink to="/projects"> projects!</NavLink>
         </p>
       </div>
     </div>
