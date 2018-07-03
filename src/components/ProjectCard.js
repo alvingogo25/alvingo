@@ -1,43 +1,56 @@
 import React from "react";
 
+const style = {
+  minHeight: "220px",
+  backgroundColor: "#F4F7F500",
+  color: "#DEE5E5",  
+};
+
+const actionStyle = {
+  color: "#B2FFE0",
+  fontWeight: "bolder"
+};
+
 class ProjectCard extends React.Component {
   state = {
-    content: this.props.title
+    content: this.props.title,
+    hover: false
   };
 
-  handlePopoverOpen = event => {
-    this.setState({ content: this.props.note });
+  handleOnHover = event => {
+    this.setState({
+      content: this.props.note,
+      hover: true
+    });
   };
 
-  handlePopoverClose = () => {
-    this.setState({ content: this.props.title });
+  handleOffHover = () => {
+    this.setState({ content: this.props.title, hover: false });
   };
 
   render() {
     return (
-      <div className="col m12 l6">
+      <div className="col s12 l6">
         <div
-          className="card small horizontal"
-          onMouseEnter={this.handlePopoverOpen}
-          onMouseLeave={this.handlePopoverClose}>
-          <div className="card-image">
-            <img
-              style={{ maxHeight: "100%",  width: "auto"}}
-              src={`${window.location.origin}/assets/images/${
-                this.props.image
-              }.png`}
-              alt={this.props.title}
-            />
-          </div>
-          <div className="activator card-stacked">
+          className="card horizontal hoverable"
+          onMouseEnter={this.handleOnHover}
+          onMouseLeave={this.handleOffHover}
+          style={style}>
+          <div className="card-stacked col s8 center-align">
             <div className="card-content">
-              <h4>{this.state.content}</h4>
+              <span>
+                {this.state.hover ? (
+                  <h4>{this.state.content}</h4>
+                ) : (
+                  <h3>{this.state.content}</h3>
+                )}
+              </span>
             </div>
             <div className="card-action">
-              <a href={this.props.app} target="_blank">
+              <a href={this.props.app} target="_blank" style={actionStyle}>
                 App
               </a>
-              <a href={this.props.github} target="_blank">
+              <a href={this.props.github} target="_blank" style={actionStyle}>
                 Github
               </a>
             </div>

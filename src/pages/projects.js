@@ -8,7 +8,7 @@ class Projects extends React.Component {
         <div className="row">
             <ProjectCard
               title="TrackYoSelf"
-              app="track-yo-self.herokuapp.com"
+              app="https://track-yo-self.herokuapp.com"
               github="https://github.com/Fatkiddh/trackYoSelf"
               note="Journaling app with emotional analysis"
               image="track"
@@ -20,21 +20,19 @@ class Projects extends React.Component {
               note="React Memory game"
               image="pixar"
             />
-        </div>
-        <div className="row">
             <ProjectCard
               title="Burger Time"
               app="https://alvin-burger-time.herokuapp.com/"
               github="https://github.com/alvingogo25/burger"
               note="CRUD methods with burgers and SQL"
-              image=""
+              image="burger"
             />
             <ProjectCard
               title="Toy Story Trivia"
               app="https://alvingogo25.github.io/TriviaGame/"
               github="https://github.com/alvingogo25/TriviaGame"
               note="Javascript Trivia Game built with jquery"
-              image=""
+              image="lgm"
             />
         </div>
       </div>
