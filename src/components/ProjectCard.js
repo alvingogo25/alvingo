@@ -3,7 +3,8 @@ import React from "react";
 const style = {
   minHeight: "220px",
   backgroundColor: "#F4F7F500",
-  color: "#DEE5E5",  
+  color: "#DEE5E5",
+  maxHeight: "220px" 
 };
 
 const actionStyle = {
@@ -40,9 +41,9 @@ class ProjectCard extends React.Component {
             <div className="card-content">
               <span>
                 {this.state.hover ? (
-                  <h4>{this.state.content}</h4>
+                  <h5>{this.state.content}</h5>
                 ) : (
-                  <h3>{this.state.content}</h3>
+                  <h4>{this.state.content}</h4>
                 )}
               </span>
             </div>

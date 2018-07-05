@@ -1,20 +1,43 @@
-import React from 'react';
-import Tab from "./Tab";
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-const style = {
-  backgroundColor: "#B2FFE0"
+const listStyle = {
+  dispaly: "flex",
+  flexDirection: "column",
+  paddingLeft: "0px",
+  marginTop: "0px",
 };
-class TabBar extends React.Component {
-    render() {
-        return <div className="nav-wrapper">
-            <ul className="tabs" style={style}>
-              <Tab to={"/"} title={"Home"} />
-              <Tab to={"/projects"} title={"Projects"} />
-              <Tab to={"/contact"} title={"Contact"} />
-            </ul>
-          </div>;
-    }
 
+const tabStyle = {
+  backgroundColor: "#B2FFE0",
+  fontWeight: "bolder",
+  fontSize: "15px",
+  height: "50px",
+  color: "#272932",
+  display: "block",
+  paddingTop: "5%",
+  paddingBottom: "5%",
+};
+
+const active = {
+  backgroundColor: "#27293200",
+  color: "#B2FFE0"
+};
+
+class TabBar extends React.Component {
+  render() {
+    return <div id="tabBar" className="col s12 m3 center-align" style={listStyle}>
+          <NavLink exact to="/" style={tabStyle} activeStyle={active}>
+            Home
+          </NavLink>
+          <NavLink to="/projects" style={tabStyle} activeStyle={active}>
+            Projects
+          </NavLink>
+          <NavLink to="/contact" style={tabStyle} activeStyle={active}>
+            Contact
+          </NavLink>
+      </div>;
+  }
 }
 
 export default TabBar;

@@ -12,12 +12,14 @@ const App = () => (
     <Particles />
     <Router>
       <Container>
-        <TabBar />
-        <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/contact" component={Contact} />
-        </Switch>
+          <TabBar />
+        <div className="col s12 m9">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/contact" component={Contact} />
+          </Switch>
+        </div>
       </Container>
     </Router>
   </div>
