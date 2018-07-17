@@ -4,7 +4,7 @@ const style = {
   minHeight: "220px",
   backgroundColor: "#F4F7F500",
   color: "#DEE5E5",
-  maxHeight: "220px" 
+  maxHeight: "220px",
 };
 
 const actionStyle = {
@@ -15,7 +15,7 @@ const actionStyle = {
 class ProjectCard extends React.Component {
   state = {
     content: this.props.title,
-    hover: false
+    hover: false,
   };
 
   handleOnHover = event => {
@@ -37,13 +37,17 @@ class ProjectCard extends React.Component {
           onMouseEnter={this.handleOnHover}
           onMouseLeave={this.handleOffHover}
           style={style}>
+          <div className="card-image">
+            <img style={{maxHeight: "220px", width: "auto"}} src={`${window.location.origin}/assets/images/${this.props.image}.jpeg`} alt={this.props.image} />
+      </div>
           <div className="card-stacked col s8 center-align">
-            <div className="card-content">
+            <div
+              className="card-content">
               <span>
                 {this.state.hover ? (
-                  <h5>{this.state.content}</h5>
+                  <h6>{this.state.content}</h6>
                 ) : (
-                  <h4>{this.state.content}</h4>
+                  <h5 style={{fontWeight:"900"}}>{this.state.content}</h5>
                 )}
               </span>
             </div>

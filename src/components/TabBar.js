@@ -24,18 +24,23 @@ const active = {
   color: "#B2FFE0"
 };
 
+
 class TabBar extends React.Component {
   render() {
     return <div id="tabBar" className="col s12 m3 center-align" style={listStyle}>
-          <NavLink exact to="/" style={tabStyle} activeStyle={active}>
-            Home
-          </NavLink>
-          <NavLink to="/projects" style={tabStyle} activeStyle={active}>
-            Projects
-          </NavLink>
-          <NavLink to="/contact" style={tabStyle} activeStyle={active}>
-            Contact
-          </NavLink>
+        <NavLink exact to="/" style={tabStyle} activeStyle={active}>
+          Home
+        </NavLink>
+        <NavLink to="/projects" style={tabStyle} activeStyle={active}>
+          Projects
+        </NavLink>
+        <NavLink to="/resume" style={tabStyle} activeStyle={active}>
+        Resume
+        </NavLink>
+        <NavLink to="/contact" style={tabStyle} activeStyle={active}>
+          Contact
+        </NavLink>
+        
       </div>;
   }
 }

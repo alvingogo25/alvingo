@@ -1,15 +1,21 @@
 import React from "react";
+import Name from "./Name";
 
 const style = {
   position: "relative",
-  display: "flex",
   marginTop: "5%",
-  fontFamily: "'Quicksand', sans-serif",
-  backgroundColor: "#27293299"
+  fontFamily: "'Quicksand', sans-serif"
 };
 
 export default ({ children }) => (
-  <div className="container row" style={style}>
-    {children}
+  <div className="container" style={style}>
+    <Name />
+    <div
+      className="row"
+      style={{
+        backgroundColor: "#27293299"
+      }}>
+      {children}
+    </div>
   </div>
 );
