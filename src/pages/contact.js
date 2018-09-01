@@ -22,7 +22,7 @@ export default () => (
     />
 
     <ContactCard
-      link="https://drive.google.com/open?id=1a8DH-dXbyGNShLqqwB_z21N8ENxyqyip"
+      link="https://drive.google.com/open?id=1g5kAO3n4B2JnpaG51zkODeQWC8O5T0x-"
       icon="file"
       label="Resume"
       download="true"
